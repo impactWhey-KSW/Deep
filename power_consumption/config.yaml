@@ -1,0 +1,9 @@
+train: 
+  csv: 'data/train.csv'
+
+test:
+  csv: 'data/test.csv' 
+
+
+result:
+  csv: 'data/sample_submission.csv'
