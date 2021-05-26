@@ -1,0 +1,30 @@
+dataset:
+  drop:
+    - 전력사용량(kWh)
+    - num
+    - date_time
+    - 비전기냉방설비운영
+    - 태양광보유
+  
+  ratio: 0.8
+  batch_size: 1621
+  num_cpus: 1
+
+model:
+  seq_length: 12
+  data_dim: 5
+  hidden_dim: 10
+  output_dim: 1
+
+train: 
+  csv: 'data/train.csv'
+  
+  learning_rate: 0.01
+  iterations: 500
+
+test:
+  csv: 'data/test.csv' 
+
+
+result:
+  csv: 'data/sample_submission.csv'
